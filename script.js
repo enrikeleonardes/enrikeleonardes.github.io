@@ -1,12 +1,13 @@
 const elementos = document.getElementsByTagName("formulario"),
 		item = formulario.elements,
 		boton = document.getElementById("btn");
-		
+
 
 		var Correo = function(e){
 
-			if (correo.formulario.value == "") {
+			if (formulario.correo.value == "") {
 				console.log("ingrese el campo correo");
+				alerta1.innerHTML ="Ingrese El Campo Correo";
 				e.preventDefault();
 
 			}
@@ -14,8 +15,9 @@ const elementos = document.getElementsByTagName("formulario"),
 
 				var contrasena = function(e){
 
-			if (pass.formulario.value == "") {
+			if (formulario.pass.value == "") {
 				console.log("ingrese el campo contraseña");
+				alerta2.innerHTML ="Ingrese El Campo contraseña";
 				e.preventDefault();
 
 			}
@@ -25,7 +27,7 @@ const elementos = document.getElementsByTagName("formulario"),
 const validacion = function(e){
 
 	Correo(e);
-	Password(e);
+	contrasena(e);
 
 
 
