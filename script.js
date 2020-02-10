@@ -10,6 +10,9 @@ const elementos = document.getElementsByTagName("formulario"),
 				alerta1.innerHTML ="Ingrese El Campo Correo";
 				e.preventDefault();
 
+			} else {
+				alerta1.innerHTML ="";
+
 			}
 		}
 
@@ -19,6 +22,9 @@ const elementos = document.getElementsByTagName("formulario"),
 				console.log("ingrese el campo contraseña");
 				alerta2.innerHTML ="Ingrese El Campo contraseña";
 				e.preventDefault();
+
+			} else {
+				alerta2.innerHTML ="";
 
 			}
 		}
